@@ -1,0 +1,101 @@
+/* Responsive Tablette */
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    header nav {
+        gap: 15px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        align-items: start;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        display: none;
+    }
+}
+
+/* Responsive intro */
+@media (max-width: 720px) {
+    #intro {
+        padding: 20px;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    #intro div {
+        width: 50%;
+        align-items: start;
+    }
+
+    #intro p {
+        font-size: 30px;
+    }
+
+    #intro a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    #intro img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #intro {
+        flex-direction: column-reverse;
+    }
+
+    #intro div {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #intro p {
+        font-size: 24px;
+    }
+
+    #intro img {
+        height: 200px;
+    }
+}
+
+/* Responsive A propos */
+@media (max-width: 720px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
+
+/* Responsive Footer */
+@media (max-width: 720px) {
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+}

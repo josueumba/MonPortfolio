@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr-CD">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js" defer></script>
+    <title>Mon Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">UMBA <span style="color: #0fdbd0;">JOSUE</span></a></h1>
+        <nav>
+            <a href="index.html" class="active">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#competences">Compétences</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Section introduction -->
+        <section id="intro">
+            <div>
+                <p>Je suis <span style="color: #0fdbd0;">Josué</span>, Développeur Web Junior passionné par le développement informatique et la photographie.</p>
+                <a href="#projects">Voir mes projets</a>
+            </div>
+
+            <img src="images/programmer.png" alt="Image de portfolio">
+        </section>
+
+
+        <!-- Section À propos -->
+        <section id="about">
+        <h1>À propos</h1>
+
+        <div id="about-container">
+            <div id="about-text">
+                <p>Je m'appelle <span style="color: #0fdbd0;">Umba</span>, passioné par le développement informatique </p>
+                <p>Je suis actuellment étudiant en <span style="color: #0fdbd0;">Génie Logiciel</span>, <br>et je cherche à améliorer mes compétences en technologies informatiques modernes.</p>
+                <p>J'adore participer dans des projets collectifs pour tester mon niveau, <br>et pouvoir apprendre de l'expérience des autres</p>
+                <a href="CV_Josue_Umba.pdf" download="CV_Josue_Umba.pdf">Télécharger mon CV</a>
+            </div>
+
+            <div id="about-image">
+                <img src="images/477452567_3987239524891660_571266944017273856_n.jpg" alt="Mon image">
+            </div>
+        </div>
+
+        </section>
+
+
+        <!-- Section Projets -->
+        <section id="projects">
+            <h1>Mes Projets</h1>
+
+            <div id="projects-container">
+                <div class="project-card">
+                    <p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM</p>
+                    <p>#html, #css, #js</p>
+                    <a href="">Voir</a>
+                </div>
+
+                <div class="project-card">
+                    <p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM</p>
+                    <p>#html, #css, #js</p>
+                    <a href="">Voir</a>
+                </div>
+
+                <div class="project-card">
+                    <p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM</p>
+                    <p>#html, #css, #js</p>
+                    <a href="">Voir</a>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- Section Compétences -->
+        <section id="competences">
+            <h1>Mes Compétences</h1>
+
+            <div id="competences-container">
+                <div class="skills">
+                    <h3>Soft Skills</h3>
+
+                    <div>
+                        <label for="">Collaboration</label>
+                        <progress value="60" max="100"></progress>
+                    </div>
+
+                    <div>
+                        <label for="">Esprit critique</label>
+                        <progress value="70" max="100"></progress>
+                    </div>
+
+                    <div>
+                        <label for="">Adaptabilité</label>
+                        <progress value="60" max="100"></progress>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h3>Hard Skills</h3>
+                    
+                    <div>
+                        <label for="">HTML</label>
+                        <progress value="90" max="100"></progress>
+                    </div>
+
+                    <div>
+                        <label for="">CSS</label>
+                        <progress value="70" max="100"></progress>
+                    </div>
+
+                    <div>
+                        <label for="">JavaScript</label>
+                        <progress value="50" max="100"></progress>
+                    </div>
+
+                    <div>
+                        <label for="">PHP</label>
+                        <progress value="55" max="100"></progress>
+                    </div>
+
+                    <div>
+                        <label for="">GITHUB</label>
+                        <progress value="60" max="100"></progress>
+                    </div>
+
+                    <div>
+                        <label for="">MySQL</label>
+                        <progress value="65" max="100"></progress>
+                    </div>
+
+                    <div>
+                        <label for="">PostgreSQL</label>
+                        <progress value="60" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section Contact -->
+         <section id="contact">
+            <div id="contact-container">
+                <p><span id="p1">Vous avez un <span style="color: #0fdbd0;">projet en tête ?</span></span> <br><span id="p2">N'hésitez pas à me <span style="color: #0fdbd0;">contacter</span></span></p>
+
+                <div id="error-messages"></div>
+
+                <form onsubmit="validateForm(event)">
+                    <div id="noms">
+                        <span>
+                            <label for="">Votre prénom</label>
+                            <input type="text" name="" id="prenom" placeholder="Josué">
+                        </span>
+
+                        <span>
+                            <label for="">Votre nom</label>
+                            <input type="text" name="" id="nom" placeholder="Umba">
+                        </span>
+                    </div>
+
+                    <div id="sujet">
+                        <label for="">Votre sujet</label>
+                        <input type="text" name="" id="sujets" placeholder="Sujet">
+                    </div>
+
+                    <textarea name="" id="message" placeholder="Ecrivez votre message"></textarea>
+
+                    <button>Envoyer</button>
+                </form>
+            </div>
+         </section>
+
+    </main>
+
+
+    <footer>
+        <p>Designed by <span style="color: #0fdbd0;">Josué</span> with HTML, CSS, JS </p>
+        <p>Tous droits réservés - 2025 &copy</p>
+    </footer>
+</body>
+</html>
