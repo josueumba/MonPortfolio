@@ -1,3 +1,32 @@
+// 
+const projetCard1 = document.querySelector('#pc1'); //Récupère le bloc du contenu du premier projet
+const projetCard1Button = document.querySelector('#pc1b'); //Récupère le bouton du premier projet
+
+const projetCard2 = document.querySelector('#pc2'); //Récupère le bloc du contenu du deuxième projet
+const projetCard2Button = document.querySelector('#pc2b'); //Récupère le bouton du deuxième projet
+
+const projetCard3 = document.querySelector('#pc3'); //Récupère le bloc du contenu du troisième projet
+const projetCard3Button = document.querySelector('#pc3b'); //Récupère le bouton du troisième projet
+
+projetCard1Button.addEventListener("click", ()=> {
+    projetCard1.style.overflow = "visible"
+    projetCard1.style.height = "auto"
+});
+
+projetCard2Button.addEventListener("click", ()=> {
+    projetCard2.style.overflow = "visible"
+    projetCard2.style.height = "auto"
+})
+
+projetCard3Button.addEventListener("click", ()=> {
+    projetCard3.style.overflow = "visible"
+    projetCard3.style.height = "auto"
+})
+
+
+
+
+// Validation Formulaire
 function validateForm(event) {
     event.preventDefault()
 

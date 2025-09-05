@@ -1,3 +1,7 @@
+/* 
+    Ce fichier est dedié qu'au responsive du site
+*/
+
 /* Responsive Tablette */
 @media (max-width: 1200px) {
     header {
@@ -79,11 +83,49 @@
 
 /* Responsive A propos */
 @media (max-width: 720px) {
-    
+    #about {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        height: auto;
+    }
+
+    #about-container {
+        height: auto;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
-    
+    #about {
+        gap: 20px;
+        /* padding: 20px 0; */
+    }
+
+    #about h1 {
+        font-size: 26px;
+    }
+
+    #about-container {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    #about-text {
+        width: 100%;
+    }
+
+    #about-text p {
+        font-size: 20px;
+    }
+
+    #about a {
+        font-weight: bold;
+        font-size: 16px;
+        /* padding: 15px 20px; */
+        border-radius: 5px;
+    }
 }
 
 /* Responsive Footer */
