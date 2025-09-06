@@ -82,7 +82,7 @@
 }
 
 /* Responsive A propos */
-@media (max-width: 720px) {
+@media (max-width: 1200px) {
     #about {
         display: flex;
         flex-direction: column;
@@ -94,6 +94,16 @@
     #about-container {
         height: auto;
         justify-content: center;
+    }
+}
+
+@media (max-width: 720px) {
+    #about {
+        gap: 20px;
+    }
+
+    #about-container {
+        flex-direction: column-reverse;
     }
 }
 
@@ -125,6 +135,66 @@
         font-size: 16px;
         /* padding: 15px 20px; */
         border-radius: 5px;
+    }
+}
+
+
+/* Responsive Projets */
+@media (max-width: 480px) {
+    #projects h1 {
+        font-size: 26px;
+    }
+
+    #projects-container {
+        gap: 50px;
+        margin: 0;
+        margin-bottom: 100px;
+    }
+
+    .project-card a {
+        padding: 5px 40px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+/* Responsive Competences */
+@media (max-width: 720px) {
+    progress {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #competences h1 {
+        font-size: 26px;
+    }
+
+    #competences-container {
+        margin:  0;
+    }
+
+    progress {
+        width: 250px;
+    }
+}
+
+/* Responsive Contact */
+@media (max-width: 920px) {
+    #p1 {
+        font-size: 20px;
+    }
+    #p2 {
+        font-size: 16px;
+    }
+
+    form label {
+        font-size: 18px;
+    }
+
+    #noms {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 

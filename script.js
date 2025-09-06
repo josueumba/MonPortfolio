@@ -1,27 +1,49 @@
-// 
+// Mini jeu d'animation pour la section projets
 const projetCard1 = document.querySelector('#pc1'); //Récupère le bloc du contenu du premier projet
 const projetCard1Button = document.querySelector('#pc1b'); //Récupère le bouton du premier projet
 
-const projetCard2 = document.querySelector('#pc2'); //Récupère le bloc du contenu du deuxième projet
-const projetCard2Button = document.querySelector('#pc2b'); //Récupère le bouton du deuxième projet
+const projetCard2 = document.querySelector('#pc2');
+const projetCard2Button = document.querySelector('#pc2b');
 
-const projetCard3 = document.querySelector('#pc3'); //Récupère le bloc du contenu du troisième projet
-const projetCard3Button = document.querySelector('#pc3b'); //Récupère le bouton du troisième projet
+const projetCard3 = document.querySelector('#pc3');
+const projetCard3Button = document.querySelector('#pc3b');
 
-projetCard1Button.addEventListener("click", ()=> {
-    projetCard1.style.overflow = "visible"
-    projetCard1.style.height = "auto"
+projetCard1Button.addEventListener("click", () => {
+    if (projetCard1.style.overflow === "visible") {
+        projetCard1.style.overflow = "hidden";
+        projetCard1.style.height = "150px";
+        projetCard1Button.innerHTML = "Voir plus";
+    } else {
+        projetCard1.style.overflow = "visible";
+        projetCard1.style.height = "auto";
+        projetCard1Button.innerHTML = "Voir moins";
+    }
 });
 
-projetCard2Button.addEventListener("click", ()=> {
-    projetCard2.style.overflow = "visible"
-    projetCard2.style.height = "auto"
-})
 
-projetCard3Button.addEventListener("click", ()=> {
-    projetCard3.style.overflow = "visible"
-    projetCard3.style.height = "auto"
-})
+projetCard2Button.addEventListener("click", () => {
+    if (projetCard2.style.overflow === "visible") {
+        projetCard2.style.overflow = "hidden";
+        projetCard2.style.height = "150px";
+        projetCard2Button.innerHTML = "Voir plus";
+    } else {
+        projetCard2.style.overflow = "visible";
+        projetCard2.style.height = "auto";
+        projetCard2Button.innerHTML = "Voir moins";
+    }
+});
+
+projetCard3Button.addEventListener("click", () => {
+    if (projetCard3.style.overflow === "visible") {
+        projetCard3.style.overflow = "hidden";
+        projetCard3.style.height = "150px";
+        projetCard3Button.innerHTML = "Voir plus";
+    } else {
+        projetCard3.style.overflow = "visible";
+        projetCard3.style.height = "auto";
+        projetCard3Button.innerHTML = "Voir moins";
+    }
+});
 
 
 
@@ -30,11 +52,11 @@ projetCard3Button.addEventListener("click", ()=> {
 function validateForm(event) {
     event.preventDefault()
 
-    const nom = document.getElementById('nom').value.trim();
-    const prenom = document.getElementById('prenom').value.trim();
-    const sujet = document.getElementById('sujets').value.trim();
-    const message = document.getElementById('message').value.trim();
-    const errorMessages = document.getElementById('error-messages');
+    const nom = document.querySelector('#nom').value.trim();
+    const prenom = document.querySelector('#prenom').value.trim();
+    const sujet = document.querySelector('#sujets').value.trim();
+    const message = document.querySelector('#message').value.trim();
+    const errorMessages = document.querySelector('#error-messages');
     let errors = [];
     let regexNoms = /^[a-zA-Z]+$/;
     let regexSujetMessage = /^\d+$/;
@@ -86,7 +108,7 @@ function validateForm(event) {
         errorMessages.style.fontWeight = "bold";
 
     } else {
-        errorMessages.innerHTML = "Formulaire valide !";
+        errorMessages.innerHTML = "Formulaire valide";
         errorMessages.style.background = "green";
         errorMessages.style.fontWeight = "bold";
     }
